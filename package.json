@@ -1,0 +1,24 @@
+{
+  "name": "nin-cli",
+  "version": "1.0.0",
+  "description": "nin-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "tsc && node ./dist/index.js",
+    "init": "tsc && node ./dist/index.js -v"
+  },
+  "bin": {
+    "nincli": "dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commander": "^2.19.0"
+  },
+  "dependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^10.12.0"
+  }
+}
